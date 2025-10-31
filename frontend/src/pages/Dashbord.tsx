@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchTransactions } from '../store/transactionsSlice';
 import TransactionForm from './TransactionForm';
@@ -17,7 +17,7 @@ import {
   YAxis,
   Legend,
 } from 'recharts';
-import { Loader, AlertCircle } from 'lucide-react';
+import { AlertCircle } from 'lucide-react';
 
 const COLORS = ['#10B981', '#EF4444', '#6366F1', '#F59E0B', '#06B6D4'];
 
