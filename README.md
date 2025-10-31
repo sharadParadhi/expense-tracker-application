@@ -29,7 +29,7 @@ git clone https://github.com/your-username/expense-tracker.git
 ```
 
 2. Install dependencies
-   Frontend
+Frontend
 
 ```bash
 cd frontend
@@ -61,14 +61,14 @@ npm run dev
 
 Start Frontend
 
-````bash
+```bash
 npm run dev
 ```
 
 
 
--Frontend runs on: http://localhost:5173
--Backend runs on: http://localhost:5000
+- Frontend runs on: http://localhost:5173
+- Backend runs on: http://localhost:5000
 
 
 📱 Features
@@ -81,7 +81,6 @@ npm run dev
 -🎨 Fully responsive UI built with Tailwind CSS
 -☁️ MongoDB Atlas for persistent data storage
 
-````
 
 📸 Screenshots
 
