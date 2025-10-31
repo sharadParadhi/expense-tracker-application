@@ -40,9 +40,9 @@ export default function TransactionList({ transactions }: Props) {
     window.location.reload();
   };
 
-  const handleDelete = (id: string) => {
+  const handleDelete = async(id: string) => {
     if (window.confirm('Are you sure you want to delete this transaction?')) {
-      dispatch(deleteTransaction(id));
+      await dispatch(deleteTransaction(id));
     }
     window.location.reload();
   };
