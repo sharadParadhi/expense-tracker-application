@@ -5,7 +5,7 @@ It provides smooth UI interactions, real-time data updates, and a modern respons
 
 ## 🚀 Live Demo
 
-🔗 [View Deployed App](https://your-deployed-link.com)
+🔗 [View Deployed App](https://expense-tracker-application-git-d36421-sharadparadhis-projects.vercel.app/)
 
 ---
 
