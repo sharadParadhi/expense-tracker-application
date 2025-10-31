@@ -2,7 +2,9 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const API = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API =
+  import.meta.env.VITE_API_URL ||
+  'https://expense-tracker-application-1hf9.onrender.com/api';
 import type { Transaction } from '../types/transctions';
 
 // Define the shape of your slice state

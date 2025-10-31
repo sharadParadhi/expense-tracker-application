@@ -39,7 +39,7 @@ npm install
 Backend
 
 ```bash
-cd ../backend
+cd backend
 npm install
 ```
 
@@ -73,13 +73,13 @@ npm run dev
 
 📱 Features
 
--💰 Add, edit, and delete transactions
--📊 View categorized income and expense lists
--🔄 Real-time updates using Redux
--📅 Filter by date and category
--🧠 Smart form validation and error handling
--🎨 Fully responsive UI built with Tailwind CSS
--☁️ MongoDB Atlas for persistent data storage
+- 💰 Add, edit, and delete transactions
+- 📊 View categorized income and expense lists
+- 🔄 Real-time updates using Redux
+- 📅 Filter by date and category
+- 🧠 Smart form validation and error handling
+- 🎨 Fully responsive UI built with Tailwind CSS
+- ☁️ MongoDB Atlas for persistent data storage
 
 ````
 
