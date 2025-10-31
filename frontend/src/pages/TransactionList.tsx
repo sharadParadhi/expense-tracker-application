@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Pencil, Trash2, X } from 'lucide-react';
 import {
   deleteTransaction,
+  fetchTransactions,
   updateTransaction,
 } from '../store/transactionsSlice';
 import type { AppDispatch } from '../store/store';
@@ -15,6 +16,7 @@ interface Props {
 export default function TransactionList({ transactions }: Props) {
   const dispatch = useDispatch<AppDispatch>();
   const [editing, setEditing] = useState<Transaction | null>(null);
+  const [saving, setSaving] = useState(false);
   const [form, setForm] = useState({
     description: '',
     amount: '',
@@ -32,16 +34,13 @@ export default function TransactionList({ transactions }: Props) {
     });
   };
 
-  const handleSave = () => {
+  const handleSave = async () => {
     if (!editing?._id) return;
-    dispatch(
-      updateTransaction({
-        _id: editing._id,
-        ...form,
-        amount: Number(form.amount),
-      })
-    );
+    setSaving(true);
+    await dispatch(updateTransaction({ _id: editing._id, payload: form }));
+    setSaving(false);
     setEditing(null);
+
     window.location.reload();
   };
 
